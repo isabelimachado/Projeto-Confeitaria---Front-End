@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Encomendas Doce Vitta</title>
+</head>
+<div id="cabecalho">
+    <img src="TITULO.PNG" width="400">
+    <img src="logo.png" width="150" height="150">
+</div>
+
+<body id="bodybolo">
+    <div id="principal">
+        <div id="menu">
+            <a href="index.html"><button class="botao">Home</button></a>
+            <a href="bolos.html"><button class="botao"> Bolos e Tortas</button></a>
+            <a href="encomendas.html"><button class="botao">Encomendas</button></a>
+        </div>
+        <div id="formulario">
+            <h2>FORMULÁRIO PARA ENTREGAS</h2>
+            <form name="form_botoes" method="post" action="botoes.php">
+                <h3>Informações Clientes: </h3>
+                Nome: <input type="text" name="nome"><br>
+                <br>
+
+                Endereço: <input type="text" name="endereco" size="30"><br>
+                <br>
+
+                Bairro: <input type="text" name="bairro"><br>
+                <br>
+
+                Cidade: <input type="text" name="cidade"><br>
+                <br>
+
+                Estado:
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select><br>
+                <br>
+
+                CEP: <input type="text" name="cpf"><br>
+
+                <br>
+                E-mail:
+                <input type="text" name="email" id="email" size=30>
+                <br>
+
+                <br>
+                RG: <input type="text" name="cpf"><br>
+
+                <br>
+                Telefone Celular: <input type="text" name="rg"><br>
+
+                <br>
+                Telefone Residencial: <input type="text" name="telefone residencial"><br>
+
+                <br>
+                CPF: <input type="text" name="cpf"><br>
+
+                <h3>Informações Encomendas: </h3>
+
+                Data Entrega:
+                <input type="date" name="dataent" id="dataent">
+                <br>
+
+                <br>
+                Hora Entrega:
+                <input type="time" name="horaent" id="horaent">
+                <br>
+
+                <br>
+                Tipo de Evento:
+                <select name="pais">
+                    <option value="a">Aniversário</option>
+                    <option value="c">Casamento</option>
+                    <option value="f">Formatura</option>
+                    <option value="cb">Chá de Bebê</option>
+                    <option value="co">Confraternização</option>
+                    <option value="o">Outros</option>
+                </select><br>
+
+                <br>
+                Tipo de Bolo/Torta:
+                <select name="tipo-bolo/torta" id="tipo-bolo/torta">
+                    <option value="redv">Torta de Red Velvet</option>
+                    <option value="mousse">Bolo de Mousse de Chocolate</option>
+                    <option value="ninho">Torta de Ninho com Morango</option>
+                    <option value="cenoura">Bolo de Cenoura com Chocolate</option>
+                    <option value="limao">Torta de Limão</option>
+                    <option value="coco">Bolo de Coco</option>
+                    <option value="pistache">Torta de Pistache</option>
+                    <option value="abacaxi">Torta de Abacaxi</option>
+                    <option value="avela">Bolo de Avelã sem Glúten</option>
+                </select><br>
+
+                <br>
+                Quantidade de Bolo/Torta: <input type="text" name="qtde"><br>
+                <br>
+
+                Especificações (sem açucar,glúten...) <input type="text" name="Especificações" size="30"><br>
+                <br>
+
+                <label for="forma-pagamento">Forma de Pagamento:</label>
+                <select name="forma-pagamento" id="forma-pagamento">
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="debito">Cartão de Débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="pix">PIX</option>
+                    <option value="transferencia">Transferência Bancária</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select><br><br>
+
+                <input type="submit" name="bentrar" value="Entrar" class="botoes">
+                <input type="reset" value="Limpar" class="botoes">
+        </div>
+    </div>
+    </form>
+    <footer id="rodape">
+        <marquee>
+            <p>by Isabeli Machado - 2137</p>
+            <p>© 2024 Confeitaria Doce Vita | Redes Sociais: Instagram @confeitariadocevitta | Endereço: Criciúma - Ana
+                Maria </p>
+        </marquee>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
